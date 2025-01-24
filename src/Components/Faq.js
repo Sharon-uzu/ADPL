@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { GoPlus, GoDash } from "react-icons/go";
 import pix from "../Assets/Rectangle 8.png";
+import LazyLoad from 'react-lazyload';
 
 const Faqs = [
   {
@@ -39,7 +40,9 @@ const Faq = () => {
     <div className="faq" id="faq">
       <div className="faq-c">
         <div className="f-img">
-          <img src={pix} alt="" />
+          <LazyLoad>
+            <img src={pix} alt="" />
+          </LazyLoad>
         </div>
         
         <div className="faq-r">

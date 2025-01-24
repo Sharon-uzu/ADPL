@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom'
 import { FaFacebook } from "react-icons/fa";
 import { IoLogoPinterest } from "react-icons/io";
 import { FaInstagramSquare } from "react-icons/fa";
-import logo from '../Assets/ADPL 1 1.png'
+import logo from '../Assets/ADPL 1.png'
 import { FaBars } from "react-icons/fa";
 import { RiCloseFill } from "react-icons/ri";
+import LazyLoad from 'react-lazyload';
 
 const Header = () => {
 
@@ -38,7 +39,6 @@ const Header = () => {
     <header>
         <div className="h-first">
             <div>
-                <Link to='/'>LOGIN</Link>
                 <Link to='/'><FaFacebook className='h-i'/></Link>
                 <Link to='/'><IoLogoPinterest className='h-i'/></Link>
                 <Link to='/'><FaInstagramSquare className='h-i'/></Link>
@@ -47,7 +47,7 @@ const Header = () => {
 
         <div className="h-second">
             <nav>
-                <Link to='/'><img src={logo} alt="" /></Link>
+                <Link to='/'><LazyLoad><img src={logo} alt="" /></LazyLoad></Link>
 
                 <div className='bars' onClick={handleClick}>
                   {click ? (<RiCloseFill id='close' />) : (<FaBars id='bar' />)}

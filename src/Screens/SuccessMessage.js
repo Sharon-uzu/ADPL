@@ -6,6 +6,7 @@ import { FaFacebook } from "react-icons/fa";
 import { IoLogoPinterest } from "react-icons/io";
 import { FaInstagramSquare } from "react-icons/fa";
 import logo from '../Assets/ADPL 1 1.png'
+import LazyLoad from 'react-lazyload';
 
 const SuccessMessage = () => {
   return (
@@ -22,7 +23,7 @@ const SuccessMessage = () => {
 
             <div className="h-second">
                 <nav>
-                    <Link to='/'><img src={logo} alt="" /></Link>
+                    <Link to='/'><LazyLoad><img src={logo} alt="" /></LazyLoad></Link>
 
                     
                 </nav>

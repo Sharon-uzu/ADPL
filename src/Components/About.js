@@ -1,6 +1,8 @@
 import React from 'react'
 import pix from '../Assets/image 1.png'
 import { IoArrowForwardOutline } from "react-icons/io5";
+import { Link } from 'react-router-dom';
+import LazyLoad from 'react-lazyload';
 
 const About = () => {
   return (
@@ -44,11 +46,13 @@ const About = () => {
             </div>
 
             <div className="s-img">
-                <img src={pix} alt="" />
+                <LazyLoad>
+                    <img src={pix} alt="" />
+                </LazyLoad>
             </div>
 
             <div className="more">
-                <h3><IoArrowForwardOutline  className='r-i'/>Read More</h3>
+            <Link to='/about'><h3><IoArrowForwardOutline  className='r-i'/>Read More</h3></Link>
             </div>
 
 

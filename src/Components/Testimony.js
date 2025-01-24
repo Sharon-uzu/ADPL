@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Autoplay  } from "swiper/modules"; // Correct module imports
 import "swiper/css";
 import "swiper/css/navigation";
+import LazyLoad from 'react-lazyload';
 
 
 const Testimonial = [
@@ -43,7 +44,9 @@ const Testimony = () => {
     <div className='testimony'>
         <div className="test">
             <div className="test-l">
-                <img src={pix} alt="" />
+              <LazyLoad>
+                  <img src={pix} alt="" />
+                </LazyLoad>
                 <p>Daypal made my life so much easier! I needed help with cleaning and laundry, and within minutes of posting my task, I got connected to a reliable helper. The process was seamless, and I loved how easy it was to schedule everything. Highly recommend for anyone looking to save time and reduce stress!</p>
             </div>
 

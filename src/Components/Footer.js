@@ -7,13 +7,17 @@ import { FaGlobe } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { IoLogoPinterest } from "react-icons/io";
 import { FaInstagramSquare } from "react-icons/fa";
+import LazyLoad from 'react-lazyload';
+
 const Footer = () => {
   return (
     <div className='footer'>
         <footer>
             <div className="foot-c">
                 <div className="f1">
-                    <img src={logo} alt="" />
+                    <LazyLoad>
+                        <img src={logo} alt="" />
+                    </LazyLoad>
                     <p>Consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                 </div>
 
@@ -75,13 +79,13 @@ const Footer = () => {
 
         </footer>
 
-        <div className="links">
+        {/* <div className="links">
             <Link to="">Contact</Link>
             <Link to="">Terms and conditions</Link>
             <Link to="">Privacy policy</Link>
             <Link to="">Cookies policy</Link>
             <Link to="">Disclaimer</Link>
-        </div>
+        </div> */}
     </div>
   )
 }

@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import { LuLocateFixed } from "react-icons/lu";
 import { Link } from "react-router-dom";
 import pix from "../Assets/Frame 2072.png";
+import LazyLoad from 'react-lazyload';
 
 const propertiesList = [
   {
@@ -72,17 +73,19 @@ const Properties = () => {
         >
         {propertiesList.map((property) => (
             <SwiperSlide key={property.id} className="prop1">
-            <img src={property.image} alt={property.title} />
-            <h3>{property.title}</h3>
-            <p>{property.location}</p>
-            <div className="p-btns">
-                <Link to="">
-                <button>View Details</button>
-                </Link>
-                <Link to="">
-                <button className="p-btn">Enquire</button>
-                </Link>
-            </div>
+              <LazyLoad>
+                <img src={property.image} alt={property.title} />
+              </LazyLoad>
+              <h3>{property.title}</h3>
+              <p>{property.location}</p>
+              <div className="p-btns">
+                  <Link to="">
+                  <button>View Details</button>
+                  </Link>
+                  <Link to="">
+                  <button className="p-btn">Enquire</button>
+                  </Link>
+              </div>
             </SwiperSlide>
         ))}
         <div className="swiper-button-next"></div>

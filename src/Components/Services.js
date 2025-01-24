@@ -1,12 +1,16 @@
 import React from 'react'
 import pix from '../Assets/Rectangle 1.png'
 import frame from '../Assets/Frame 2086.png'
+import LazyLoad from 'react-lazyload';
+
 const Services = () => {
   return (
     <div>
-        <div className="serves">
+        <div className="serves serves1">
             <div className="s-img">
-                <img src={pix} alt="" />
+                <LazyLoad>
+                    <img src={pix} alt="" />
+                </LazyLoad>
             </div>
             
             <div className="s-txt">
