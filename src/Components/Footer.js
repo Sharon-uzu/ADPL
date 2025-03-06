@@ -33,11 +33,12 @@ const Footer = () => {
 
                 <div className="f2">
                     <h4>Discovery</h4>
+                    
                     <ul>
-                        <li><Link to=''>Canada</Link></li>
-                        <li><Link to=''>United States</Link></li>
-                        <li><Link to=''>Germany</Link></li>
-                        <li><Link to=''>India</Link></li>
+                        <li><Link to=''>Benin city</Link></li>
+                        <li><Link to=''>Abeokuta</Link></li>
+                        <li><Link to=''>Akure</Link></li>
+                        <li><Link to=''>Enugu</Link></li>
                     </ul>
                 </div>
 

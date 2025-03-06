@@ -16,7 +16,7 @@ const Services = () => {
             <div className="s-txt">
                 <h4>OUR SERVICES</h4>
                 <h3>Assisting individuals in locating the appropriate homes.</h3>
-                <p>Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus. Nulla convallis ipsum molestie nibh.</p>
+                <p>IT NOT JUST THE HOME IT IS THE ENVIRONMENT.</p>
 
                 <div className='s-card'>
                     <div className="ss">

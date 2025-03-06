@@ -14,7 +14,11 @@ const About = () => {
             <div className="s-txt">
                 <h4>WHO WE ARE</h4>
                 <h3>Making Homeownership Accessible and Affordable</h3>
-                <p>Our Story: Founded to bridge the gap for Africans in the diaspora, we help individuals achieve their dream of owning a home of their own.</p>
+                <p>Global diaspora Property limited registered in Nigeria with registrations in the UK and USA
+as African diaspora property limited. Team of professional in building with wide and good
+
+experience in the industry. Headed and controlled by management team based in the UK
+and in partnership with international development team to provide you the best.</p>
 
 
                 <div className="ab-cards">
