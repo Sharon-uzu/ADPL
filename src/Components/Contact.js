@@ -29,7 +29,7 @@ const Contact = () => {
 
                         <div className="cont">
                             <h5>Email Address</h5>
-                            <p>info@assistia.com.au</p>
+                            <p>info@africadisporasproperties.com</p>
                         </div>
                     </div>
 
@@ -38,9 +38,11 @@ const Contact = () => {
                             <FaGlobe className="c-i"/>
                         </div>
 
+                       
+
                         <div className="cont">
                             <h5>Office Address</h5>
-                            <p>2728 Hickory StreetSalt Lake City, UT 84104</p>
+                            <p> 3 Larkspur close, Newport PO30 2GG United Kingdom</p>
                         </div>
                     </div>
                 </div>
